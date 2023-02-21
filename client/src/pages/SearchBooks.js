@@ -5,7 +5,7 @@ import {
   Form,
   Button,
   Card,
-  Row
+  CardColumns,
 } from 'react-bootstrap';
 
 import Auth from '../utils/auth';
@@ -118,7 +118,7 @@ const SearchBooks = () => {
             ? `Viewing ${searchedBooks.length} results:`
             : 'Search for a book to begin'}
         </h2>
-        <Row>
+        <CardColumns>
           {searchedBooks.map((book) => {
             return (
               <Col md="4">
@@ -145,7 +145,7 @@ const SearchBooks = () => {
               </Col>
             );
           })}
-        </Row>
+        </CardColumns>
       </Container>
     </>
   );
