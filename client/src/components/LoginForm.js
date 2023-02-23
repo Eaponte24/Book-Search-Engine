@@ -4,7 +4,7 @@ import { Form, Button, Alert } from 'react-bootstrap';
 
 import { useMutation } from '@apollo/client';
 import Auth from '../utils/auth';
-import { LOGIN } from '../utils/mutations';
+import { LOGIN } from '../utils/mutation';
 
 const LoginForm = () => {
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
@@ -51,7 +51,7 @@ const LoginForm = () => {
       password: '',
     });
   };
-  
+
 
   return (
     <>
